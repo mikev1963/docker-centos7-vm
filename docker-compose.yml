@@ -1,0 +1,11 @@
+version: '3'
+services:
+  centos7:
+    image: centos7
+    container_name: centos7
+    hostname: centos7.server.mikevware.net
+    privileged: true
+    ports: 
+      - '2222:22'
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup
