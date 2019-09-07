@@ -1,6 +1,6 @@
 #!/bin/sh
 
-USER_LIST="ansible mikev1963"
+USER_LIST="ansible"
 SUDO_GROUP=wheel
 
 OSTYPE="`lsb_release -d |awk '{print $2}'`"
@@ -8,11 +8,11 @@ echo $OSTYPE
 
 case "${OSTYPE}" in
   *Ubuntu* )
-     echo "Ubuntu" 
+     echo "Ubuntu"
      SUDO_GROUP=sudo
      ;;
   *CentOS* )
-     echo "Centos" 
+     echo "Centos"
      SUDO_GROUP=wheel
      ;;
   *)
